@@ -9,18 +9,11 @@ import java.util.List;
 
 @RestController
 public class UserController {
-//  private final UserRepository userRepository;
-//
-//  public UserController(UserRepository userRepository) {
-//    this.userRepository = userRepository;
-//  }
-
   @Autowired
   JdbcTemplate jdbcTemplate;
 
   @GetMapping("/api/users")
-  public Iterable<User> get() {
-//    return userRepository.findAll();
+  public List<User> get() {
     List<User> query = jdbcTemplate.query("SELECT * FROM USERS;", (rs, row) -> new User(rs.getString("username"), rs.getString("firstname"),
             rs.getString("lastname"), rs.getString("userpassword"), Gender.valueOf(rs.getString("gender"))));
     return query;

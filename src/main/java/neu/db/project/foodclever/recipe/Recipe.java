@@ -18,14 +18,6 @@ public class Recipe {
     private String description;
 
 
-
-    // public Recipe(int recipeId, String userName, String description) {
-    //     this.recipeId = recipeId;
-    //     this.userName = userName;
-    //     this.description = description;
-    // }
-
-
     public Recipe() {
     }
 
