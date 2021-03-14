@@ -8,7 +8,7 @@
 4. git checkout --track origin/<code>&lt;Name&gt;</code> , <code>&lt;Name&gt;</code> is your name(Vera, Joyce, Olivia, Ali) (sorry Ali to be the last one as ladies first).
 5. You can start working on your question - see instructions below.
 
-## if you use VS code.
+## If you use VS code.
 Below extensions are useful:
 
 Name: ESLint
@@ -44,6 +44,18 @@ You can refer to Q10 and Q10Controller as an example.
 8. create file qx.sql under src/main/resources.
 9. put the sql of the question in the qx.sql.
 
+## Steps to compile and run
+1. in project folder, i.e. foodclever, run "./mvnw clean install" to clean up and compile
+2. run "./mvnw sprint-boot:run" to start the application
+3. view the website in browser with "http://localhost:8080"
+4. if you modified java classes, you need to press ctrl-c to stop the server, then step 1 to recompile, and finally step 2 to restart the application
+5. if you modified the js files, you can just refresh the website to view the effect of modification
+
+## Steps for commit and push to github
+1. in project folder, i.e. foodclever, run "git status" to  view your added and modified files, make sure your branch is your name, i.e. you should see "On branch <code>Your name<code>"
+2. run "git add xxx" to add the files you want to commit, if you want to commit all files, run "git add ." (including the full stop at the end).
+3. run "git commit -m '<code>Your note</code>'" to commit locally.
+4. run "git push" to push to the remote repository.
 
 
 
