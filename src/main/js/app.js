@@ -2,6 +2,9 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const { default: Q10 } = require('./q10');
 const { default: Q9 } = require('./q9');
+const { default: Q1 } = require('./q1');
+const { default: Q5 } = require('./q5');
+
 
 class App extends React.Component {
 
@@ -32,6 +35,18 @@ class App extends React.Component {
                         and having most number of comments. </a>
                     </p>
 
+                    <p>
+                        <a href='#' onClick={this.handlePageClicked.bind(this, "q1")}>
+                            Q1. how many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?  
+                         </a>
+                    </p>
+
+                    <p>
+                        <a href='#' onClick={this.handlePageClicked.bind(this, "q5")}>
+                            Q5. What are the food rating for male gender?  
+                         </a>
+                    </p>
+
 
                 </>
             )
@@ -43,6 +58,14 @@ class App extends React.Component {
             }
             {
                 page === "q10" ? <Q10 /> : null
+            }
+
+             {
+                page === "q1" ? <Q1 /> : null
+            }
+
+             {
+                page === "q5" ? <Q5 /> : null
             }
 
         </>

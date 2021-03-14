@@ -20,9 +20,9 @@ public class FoodCleverConfig  extends AbstractJdbcConfiguration{
     DriverManagerDataSource ds = new DriverManagerDataSource();
 
     //ds.setDriverClassName(com.mysql.jdbc.Driver.class.getName());
-    ds.setUrl("jdbc:mysql://localhost:3306/dbproject");
+    ds.setUrl("jdbc:mysql://localhost:3306/Schema");
     ds.setUsername("root");
-    ds.setPassword("root");
+    ds.setPassword("password123456");
     return ds;
   }
 

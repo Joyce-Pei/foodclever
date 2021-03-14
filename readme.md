@@ -46,7 +46,7 @@ You can refer to Q10 and Q10Controller as an example.
 
 ## Steps to compile and run
 1. in project folder, i.e. foodclever, run "./mvnw clean install" to clean up and compile
-2. run "./mvnw sprint-boot:run" to start the application
+2. run "./mvnw spring-boot:run" to start the application
 3. view the website in browser with "http://localhost:8080"
 4. if you modified java classes, you need to press ctrl-c to stop the server, then step 1 to recompile, and finally step 2 to restart the application
 5. if you modified the js files, you can just refresh the website to view the effect of modification
