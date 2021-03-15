@@ -4,7 +4,7 @@ join nutrients n on fn.nutrientid = n.nutrientid
 join (
 select r.categoryid, r.description, r.averageRating from (
 	SELECT fc.categoryid, avg(rate) averageRating, fc.description
-	FROM dbProject.UserFoodRatings ufr
+	FROM UserFoodRatings ufr
 	join foods f on f.fdcid = ufr.fdcid
 	join foodcategories fc on fc.categoryid = f.foodCategoryid
 	group by fc.categoryid

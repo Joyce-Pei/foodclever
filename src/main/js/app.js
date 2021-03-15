@@ -3,6 +3,7 @@ const ReactDOM = require('react-dom');
 const { default: Q10 } = require('./q10');
 const { default: Q7 } = require('./q7');
 const { default: Q9 } = require('./q9');
+const { default: AllUsers } = require('./allUsers');
 
 class App extends React.Component {
 
@@ -22,8 +23,11 @@ class App extends React.Component {
                 <>
                     <h1> Food Clever Home </h1>
                     <p>
+                        <a href="#" onClick={this.handlePageClicked.bind(this, "users")}>Users</a>
+                    </p>
+                    <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q7")}>
-                            Q7. What is the differences of the range / average of different nutrition 
+                            Q7. What is the differences of the range / average of different nutrition
                             in the recipes of different genders?  </a>
                     </p>
                     <p>
@@ -44,6 +48,9 @@ class App extends React.Component {
         }
         return (<>
             <a href="#" onClick={this.handlePageClicked.bind(this, null)}>Home</a>
+            {
+                page === "users" ? <AllUsers /> : null
+            }
             {
                 page === "q7" ? <Q7 /> : null
             }

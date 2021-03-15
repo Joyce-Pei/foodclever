@@ -28601,6 +28601,562 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./src/main/js/allUsers.js":
+/*!*********************************!*\
+  !*** ./src/main/js/allUsers.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var AllUsers = /*#__PURE__*/function (_React$Component) {
+  _inherits(AllUsers, _React$Component);
+
+  var _super = _createSuper(AllUsers);
+
+  function AllUsers(props) {
+    var _this;
+
+    _classCallCheck(this, AllUsers);
+
+    _this = _super.call(this, props);
+
+    _this.handleCreateClicked = function () {
+      _this.setState({
+        createUser: true,
+        newUser: {
+          userName: '',
+          firstName: '',
+          lastName: '',
+          userPassword: '',
+          gender: 'Other',
+          dob: ''
+        }
+      });
+    };
+
+    _this.handleChangeNewDob = function (event) {
+      var newUser = _this.state.newUser;
+      newUser = {
+        firstName: newUser.firstName,
+        gender: newUser.gender,
+        lastName: newUser.lastName,
+        userName: newUser.userName,
+        userPassword: newUser.userPassword,
+        dob: event.target.value
+      };
+
+      _this.setState({
+        newUser: newUser
+      });
+    };
+
+    _this.handleChangeNewGender = function (event) {
+      var newUser = _this.state.newUser;
+      newUser = {
+        firstName: newUser.firstName,
+        gender: event.target.value,
+        lastName: newUser.lastName,
+        userName: newUser.userName,
+        userPassword: newUser.userPassword,
+        dob: newUser.dob
+      };
+
+      _this.setState({
+        newUser: newUser
+      });
+    };
+
+    _this.handleChangeNewUserName = function (event) {
+      var newUser = _this.state.newUser;
+      newUser = {
+        firstName: newUser.firstName,
+        gender: newUser.gender,
+        lastName: newUser.lastName,
+        userName: event.target.value,
+        userPassword: newUser.userPassword,
+        dob: newUser.dob
+      };
+
+      _this.setState({
+        newUser: newUser
+      });
+    };
+
+    _this.handleChangeNewFirstName = function (event) {
+      var newUser = _this.state.newUser;
+      newUser = {
+        firstName: event.target.value,
+        gender: newUser.gender,
+        lastName: newUser.lastName,
+        userName: newUser.userName,
+        userPassword: newUser.userPassword,
+        dob: newUser.dob
+      };
+
+      _this.setState({
+        newUser: newUser
+      });
+    };
+
+    _this.handleChangeNewLastName = function (event) {
+      var newUser = _this.state.newUser;
+      newUser = {
+        firstName: newUser.firstName,
+        gender: newUser.gender,
+        lastName: event.target.value,
+        userName: newUser.userName,
+        userPassword: newUser.userPassword,
+        dob: newUser.dob
+      };
+
+      _this.setState({
+        newUser: newUser
+      });
+    };
+
+    _this.handleChangeNewPassword = function (event) {
+      var newUser = _this.state.newUser;
+      newUser = {
+        firstName: newUser.firstName,
+        gender: newUser.gender,
+        lastName: newUser.lastName,
+        userName: newUser.userName,
+        userPassword: event.target.value,
+        dob: newUser.dob
+      };
+
+      _this.setState({
+        newUser: newUser
+      });
+    };
+
+    _this.handleChangeGender = function (event) {
+      console.log(event.target.value);
+      var users = _this.state.users;
+      var i = users.findIndex(function (user) {
+        return user.userName === _this.state.updateUser;
+      });
+      users[i] = {
+        firstName: users[i].firstName,
+        gender: event.target.value,
+        lastName: users[i].lastName,
+        userName: users[i].userName,
+        userPassword: users[i].userPassword,
+        dob: users[i].dob
+      };
+      console.log(users);
+
+      _this.setState({
+        users: users
+      });
+    };
+
+    _this.handleChangeFirstName = function (event) {
+      // console.log(event.target.value);
+      var users = _this.state.users;
+      var i = users.findIndex(function (user) {
+        return user.userName === _this.state.updateUser;
+      });
+      users[i] = {
+        firstName: event.target.value,
+        gender: users[i].gender,
+        lastName: users[i].lastName,
+        userName: users[i].userName,
+        userPassword: users[i].userPassword,
+        dob: users[i].dob
+      };
+      console.log(users);
+
+      _this.setState({
+        users: users
+      });
+    };
+
+    _this.handleChangeLastName = function (event) {
+      var users = _this.state.users;
+      var i = users.findIndex(function (user) {
+        return user.userName === _this.state.updateUser;
+      });
+      users[i] = {
+        firstName: users[i].firstName,
+        gender: users[i].gender,
+        lastName: event.target.value,
+        userName: users[i].userName,
+        userPassword: users[i].userPassword,
+        dob: users[i].dob
+      };
+      console.log(users);
+
+      _this.setState({
+        users: users
+      });
+    };
+
+    _this.handleChangePassword = function (event) {
+      var users = _this.state.users;
+      var i = users.findIndex(function (user) {
+        return user.userName === _this.state.updateUser;
+      });
+      users[i] = {
+        firstName: users[i].firstName,
+        gender: users[i].gender,
+        lastName: users[i].lastName,
+        userName: users[i].userName,
+        userPassword: event.target.value,
+        dob: users[i].dob
+      };
+      console.log(users);
+
+      _this.setState({
+        users: users
+      });
+    };
+
+    _this.handleChangeDob = function (event) {
+      var users = _this.state.users;
+      var i = users.findIndex(function (user) {
+        return user.userName === _this.state.updateUser;
+      });
+      users[i] = {
+        firstName: users[i].firstName,
+        gender: users[i].gender,
+        lastName: users[i].lastName,
+        userName: users[i].userName,
+        userPassword: users[i].userPassword,
+        dob: event.target.value
+      };
+      console.log(users);
+
+      _this.setState({
+        users: users
+      });
+    };
+
+    _this.handleCreateUser = function () {
+      console.log(_this.state.newUser);
+      var user = _this.state.newUser;
+      fetch('/api/user', {
+        method: 'POST',
+        // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      }).then(function (response) {
+        return response.json();
+      }).then(function (user) {
+        console.log(user);
+
+        if (user && user.status === 400) {
+          alert("Invalid User");
+        } else if (user && user.userName) {
+          _this.setState({
+            createUser: false
+          });
+
+          _this.componentDidMount();
+
+          alert("Created in DB");
+        } else {
+          alert("Error");
+        }
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    };
+
+    _this.handleUpdateUser = function () {
+      var users = _this.state.users;
+      var i = users.findIndex(function (user) {
+        return user.userName === _this.state.updateUser;
+      });
+      console.log(users[i]);
+      fetch('/api/user', {
+        method: 'PUT',
+        // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(users[i])
+      }).then(function (response) {
+        return response.json();
+      }).then(function (user) {
+        console.log(user);
+
+        if (user && user.status === 400) {
+          alert("Invalid User");
+        } else if (user && user.userName) {
+          _this.setState({
+            updateUser: false
+          });
+
+          alert("Updated in DB");
+        } else {
+          alert("Error");
+        }
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    };
+
+    _this.handleDeleteUserClicked = function (userName) {
+      console.log("Delete user: " + userName);
+      fetch('/api/user/' + userName, {
+        method: 'DELETE',
+        // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: ""
+      }).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        console.log(result);
+
+        _this.componentDidMount();
+
+        alert("Deleted User: " + userName);
+      });
+    };
+
+    _this.handleUpdateUserClicked = function (userName) {
+      console.log("Update user: " + userName);
+
+      _this.setState({
+        updateUser: userName
+      });
+    };
+
+    _this.state = {
+      users: null
+    };
+    return _this;
+  }
+
+  _createClass(AllUsers, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/users').then(function (response) {
+        return response.json();
+      }).then(function (users) {
+        console.log(users);
+
+        _this2.setState({
+          users: users
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var users = this.state.users;
+      var updateUser = this.state.updateUser;
+      var createUser = this.state.createUser;
+      var newUser = this.state.newUser;
+      return /*#__PURE__*/React.createElement(React.Fragment, null, " ", createUser ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("form", {
+        onSubmit: function onSubmit() {}
+      }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+        htmlFor: "userName"
+      }, "User name:"), /*#__PURE__*/React.createElement("input", {
+        type: "text",
+        id: "userName",
+        name: "userName",
+        value: newUser.userName,
+        onChange: this.handleChangeNewUserName
+      }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "firstName"
+      }, "First name:"), /*#__PURE__*/React.createElement("input", {
+        type: "text",
+        id: "firstName",
+        name: "firstName",
+        value: newUser.firstName,
+        onChange: this.handleChangeNewFirstName
+      }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "lastName"
+      }, "Last name:"), /*#__PURE__*/React.createElement("input", {
+        type: "text",
+        id: "lastName",
+        name: "lastName",
+        value: newUser.lastName,
+        onChange: this.handleChangeNewLastName
+      }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "userPassword"
+      }, "Password:"), /*#__PURE__*/React.createElement("input", {
+        type: "password",
+        id: "userPassword",
+        name: "userPassword",
+        value: newUser.userPassword,
+        onChange: this.handleChangeNewPassword
+      }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "dob"
+      }, "Date of birth:"), /*#__PURE__*/React.createElement("input", {
+        type: "date",
+        id: "dob",
+        name: "dob",
+        value: newUser.dob,
+        onChange: this.handleChangeNewDob
+      }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
+        type: "radio",
+        id: "female",
+        name: "gender",
+        value: "Female",
+        checked: newUser.gender === "Female",
+        onClick: function onClick() {},
+        onChange: this.handleChangeNewGender
+      }), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "female"
+      }, "Female"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
+        type: "radio",
+        id: "male",
+        name: "gender",
+        value: "Male",
+        checked: newUser.gender === "Male",
+        onClick: function onClick() {},
+        onChange: this.handleChangeNewGender
+      }), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "male"
+      }, "Male"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
+        type: "radio",
+        id: "other",
+        name: "gender",
+        value: "Other",
+        checked: newUser.gender === "Other",
+        onClick: function onClick() {},
+        onChange: this.handleChangeNewGender
+      }), /*#__PURE__*/React.createElement("label", {
+        htmlFor: "other"
+      }, "Other"), /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("button", {
+        type: "button",
+        onClick: this.handleCreateUser
+      }, "Save"))) : updateUser ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "User to update: ", updateUser), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("form", {
+        onSubmit: function onSubmit() {}
+      }, users ? users.filter(function (u) {
+        return u.userName === updateUser;
+      }).map(function (user) {
+        return /*#__PURE__*/React.createElement("div", {
+          key: user.userName
+        }, /*#__PURE__*/React.createElement("label", {
+          htmlFor: "firstName"
+        }, "First name:"), /*#__PURE__*/React.createElement("input", {
+          type: "text",
+          id: "firstName",
+          name: "firstName",
+          value: user.firstName,
+          onChange: _this3.handleChangeFirstName
+        }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+          htmlFor: "lastName"
+        }, "Last name:"), /*#__PURE__*/React.createElement("input", {
+          type: "text",
+          id: "lastName",
+          name: "lastName",
+          value: user.lastName,
+          onChange: _this3.handleChangeLastName
+        }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+          htmlFor: "userPassword"
+        }, "Password:"), /*#__PURE__*/React.createElement("input", {
+          type: "password",
+          id: "userPassword",
+          name: "userPassword",
+          value: user.userPassword,
+          onChange: _this3.handleChangePassword
+        }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("label", {
+          htmlFor: "dob"
+        }, "Date of birth:"), /*#__PURE__*/React.createElement("input", {
+          type: "date",
+          id: "dob",
+          name: "dob",
+          value: user.dob,
+          onChange: _this3.handleChangeDob
+        }), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
+          type: "radio",
+          id: "female",
+          name: "gender",
+          value: "Female",
+          checked: user.gender === "Female",
+          onClick: function onClick() {},
+          onChange: _this3.handleChangeGender
+        }), /*#__PURE__*/React.createElement("label", {
+          htmlFor: "female"
+        }, "Female"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
+          type: "radio",
+          id: "male",
+          name: "gender",
+          value: "Male",
+          checked: user.gender === "Male",
+          onClick: function onClick() {},
+          onChange: _this3.handleChangeGender
+        }), /*#__PURE__*/React.createElement("label", {
+          htmlFor: "male"
+        }, "Male"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
+          type: "radio",
+          id: "other",
+          name: "gender",
+          value: "Other",
+          checked: user.gender === "Other",
+          onClick: function onClick() {},
+          onChange: _this3.handleChangeGender
+        }), /*#__PURE__*/React.createElement("label", {
+          htmlFor: "other"
+        }, "Other"), /*#__PURE__*/React.createElement("br", null));
+      }) : /*#__PURE__*/React.createElement(React.Fragment, null), /*#__PURE__*/React.createElement("button", {
+        type: "button",
+        onClick: this.handleUpdateUser
+      }, "Update"))) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Users"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+        type: "button",
+        onClick: this.handleCreateClicked
+      }, "Create")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Username"), /*#__PURE__*/React.createElement("th", null, "First Name"), /*#__PURE__*/React.createElement("th", null, "Last Name"), /*#__PURE__*/React.createElement("th", null, "Gender"), /*#__PURE__*/React.createElement("th", null, "Date of Birth"), /*#__PURE__*/React.createElement("th", null, "Action"))), /*#__PURE__*/React.createElement("tbody", null, users ? users.map(function (row) {
+        return /*#__PURE__*/React.createElement("tr", {
+          key: row.userName
+        }, /*#__PURE__*/React.createElement("td", null, row.userName), /*#__PURE__*/React.createElement("td", null, row.firstName), /*#__PURE__*/React.createElement("td", null, row.lastName), /*#__PURE__*/React.createElement("td", null, row.gender), /*#__PURE__*/React.createElement("td", null, row.dob), /*#__PURE__*/React.createElement("td", null, /*#__PURE__*/React.createElement("button", {
+          type: "button",
+          onClick: _this3.handleUpdateUserClicked.bind(_this3, row.userName)
+        }, "Update"), /*#__PURE__*/React.createElement("button", {
+          type: "button",
+          onClick: _this3.handleDeleteUserClicked.bind(_this3, row.userName)
+        }, "Delete")));
+      }) : /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", {
+        colSpan: 5
+      }, "No Users")))))), " ");
+    }
+  }]);
+
+  return AllUsers;
+}(React.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AllUsers);
+
+/***/ }),
+
 /***/ "./src/main/js/app.js":
 /*!****************************!*\
   !*** ./src/main/js/app.js ***!
@@ -28643,6 +29199,9 @@ var _require2 = __webpack_require__(/*! ./q7 */ "./src/main/js/q7.js"),
 var _require3 = __webpack_require__(/*! ./q9 */ "./src/main/js/q9.js"),
     Q9 = _require3["default"];
 
+var _require4 = __webpack_require__(/*! ./allUsers */ "./src/main/js/allUsers.js"),
+    AllUsers = _require4["default"];
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -28680,6 +29239,9 @@ var App = /*#__PURE__*/function (_React$Component) {
       if (!page) {
         return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, " Food Clever Home "), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
+          onClick: this.handlePageClicked.bind(this, "users")
+        }, "Users")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+          href: "#",
           onClick: this.handlePageClicked.bind(this, "q7")
         }, "Q7. What is the differences of the range / average of different nutrition in the recipes of different genders?  ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
@@ -28693,7 +29255,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("a", {
         href: "#",
         onClick: this.handlePageClicked.bind(this, null)
-      }, "Home"), page === "q7" ? /*#__PURE__*/React.createElement(Q7, null) : null, page === "q9" ? /*#__PURE__*/React.createElement(Q9, null) : null, page === "q10" ? /*#__PURE__*/React.createElement(Q10, null) : null);
+      }, "Home"), page === "users" ? /*#__PURE__*/React.createElement(AllUsers, null) : null, page === "q7" ? /*#__PURE__*/React.createElement(Q7, null) : null, page === "q9" ? /*#__PURE__*/React.createElement(Q9, null) : null, page === "q10" ? /*#__PURE__*/React.createElement(Q10, null) : null);
     }
   }]);
 
