@@ -87,6 +87,10 @@ public class UserController {
 
   @ResponseStatus(value=HttpStatus.BAD_REQUEST)
   public class InvalidUserException extends RuntimeException{
+    /**
+     *
+     */
+    private static final long serialVersionUID = 4316310999523322655L;
     private String message;
     public InvalidUserException(String message) {
       super(message);
