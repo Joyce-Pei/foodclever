@@ -52,7 +52,7 @@ You can refer to Q10 and Q10Controller as an example.
 5. if you modified the js files, you can just refresh the website to view the effect of modification
 
 ## Steps for commit and push to github
-1. in project folder, i.e. foodclever, run "git status" to  view your added and modified files, make sure your branch is your name, i.e. you should see "On branch <code>Your name<code>"
+1. in project folder, i.e. foodclever, run "git status" to  view your added and modified files, make sure your branch is your name, i.e. you should see "On branch <code>Your name</code>"
 2. run "git add xxx" to add the files you want to commit, if you want to commit all files, run "git add ." (including the full stop at the end).
 3. run "git commit -m '<code>Your note</code>'" to commit locally.
 4. run "git push" to push to the remote repository.
