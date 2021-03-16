@@ -57,13 +57,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- tag::frontend-maven-plugin[] -->
-<!--			<plugin>-->
-<!--				<groupId>com.github.eirslett</groupId>-->
-<!--				<artifactId>frontend-maven-plugin</artifactId>-->
-<!--				<version>1.11.2</version>-->
-<!--			</plugin>-->
-			<!-- end::frontend-maven-plugin[] -->
-			<!-- tag::frontend-maven-plugin[] -->
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>

@@ -1,5 +1,6 @@
 package neu.db.project.foodclever;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration;
@@ -15,14 +16,21 @@ import javax.sql.DataSource;
 @Configuration
 @EnableJdbcRepositories
 public class FoodCleverConfig  extends AbstractJdbcConfiguration{
+  @Value( "${jdbc.url}" )
+  private String jdbcUrl;
+  @Value( "${jdbc.username}" )
+  private String jdbcUsername;
+  @Value( "${jdbc.password}" )
+  private String jdbcPwd;
+
   @Bean
   public DataSource dataSource() {
     DriverManagerDataSource ds = new DriverManagerDataSource();
 
     //ds.setDriverClassName(com.mysql.jdbc.Driver.class.getName());
-    ds.setUrl("jdbc:mysql://localhost:3306/dbproject");
-    ds.setUsername("root");
-    ds.setPassword("root");
+    ds.setUrl(jdbcUrl);
+    ds.setUsername(jdbcUsername);
+    ds.setPassword(jdbcPwd);
     return ds;
   }
 
