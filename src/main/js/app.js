@@ -2,6 +2,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const { default: Q10 } = require('./q10');
 const { default: Q9 } = require('./q9');
+const { default: Q3 } = require('./q3');
 
 class App extends React.Component {
 
@@ -19,10 +20,16 @@ class App extends React.Component {
         if (!page) {
             return (
                 <>
-                    <h1> Food Clever Home </h1>
+                    <h1> EatClever Home </h1>
+ 		    <p>
+                        <a href='#' onClick={this.handlePageClicked.bind(this, "q3")}>
+                            Q3. top 10 users who use our app the most from their login records. </a>
+                    </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q9")}>
-                            Q9. </a>
+                            Q9. What are the top 10 foods ( either by food ratings, or usage frequency in recipe, 
+			        or by number of user comments) by different ages, and their corresponding Energy 
+				based on KCAL? (restaurants may wantto know which category of food is most welcome).</a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q10")}>
@@ -39,6 +46,9 @@ class App extends React.Component {
         return (<>
             <a href="#" onClick={this.handlePageClicked.bind(this, null)}>Home</a>
             {
+                page === "q3" ? <Q3 /> : null
+            }
+	    {
                 page === "q9" ? <Q9 /> : null
             }
             {
