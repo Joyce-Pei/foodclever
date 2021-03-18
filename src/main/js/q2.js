@@ -19,23 +19,22 @@ class Q2 extends React.Component {
     render() {
         console.log(this.state.result);
         return (<>
-            <h4>Food Clever Q2</h4>
-            <div>how many users use our app in specific period, such as a day, week, month...? 
-                It is planned to show it somewhere in our welcome page to all users. </div>
+            <h4>Eat Clever Q2</h4>
+            <div>How many users use our app the past 10 days?  </div>
             <div>
                 <table>
                     <thead>
                         <tr>
-                            <th>Nums Of Users</th>
-                            <th>Nums Of Days</th>
+                            <th>User Count</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
                         {
                             this.state.result.map(row =>
                                 <tr>
-                                    <td>{row.numsOfUsers}</td>
-                                    <td>{row.numsOfDays}</td>
+                                    <td>{row.userCount}</td>
+                                    
                                 </tr>
                             )
                         }

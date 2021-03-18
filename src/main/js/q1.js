@@ -19,7 +19,7 @@ class Q1 extends React.Component {
     render(){
         console.log(this.state.result);
         return(<>
-            <h4>Food Clever Q1</h4>
+            <h4>Eat Clever Q1</h4>
             <div>{JSON.stringify(this.state.result)}</div>
         </>)
     }

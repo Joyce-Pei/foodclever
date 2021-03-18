@@ -19,7 +19,7 @@ class Q7 extends React.Component {
     render(){
         console.log(this.state.result);
         return(<>
-            <h4>Food Clever Q7</h4>
+            <h4>Eat Clever Q7</h4>
             <div>What is the differences of the range / average of different nutrition 
             (e.g. energy in calories, vitamin C, potassium, etc) in the recipes of different genders? 
             </div>

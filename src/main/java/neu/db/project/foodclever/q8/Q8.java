@@ -1,27 +1,19 @@
 package neu.db.project.foodclever.q8;
 
 public class Q8 {
-    private String FNFDescription;
-    private String nutrientName;
-
-    public Q8(String FNFDescription, String nutrientName) {
-        this.FNFDescription = FNFDescription;
-        this.nutrientName = nutrientName;
+    private String description;
+   
+    public Q8(String description) {
+        this.description = description;
     }
 
-    public String getFNFDescription() {
-        return this.FNFDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setFNFDescription(String FNFDescription) {
-        this.FNFDescription = FNFDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getNutrientName() {
-        return this.nutrientName;
-    }
-
-    public void setNutrientName(String nutrientName) {
-        this.nutrientName = nutrientName;
-    }
+ 
 }

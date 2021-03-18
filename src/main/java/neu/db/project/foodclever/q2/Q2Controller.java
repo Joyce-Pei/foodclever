@@ -21,9 +21,8 @@ public class Q2Controller {
     @GetMapping("/api/q2")
     public List<Q2> get(){
         return jdbcTemplate.query(sql,
-        (rs, row)->new Q10(
-            rs.getInt(numsOfDays), 
-            rs.getInt(numsOfUsers)));      
+        (rs, row)->new Q2(
+            rs.getInt("userCount")));      
     }
 
 

@@ -1,28 +1,19 @@
 package neu.db.project.foodclever.q2;
 
 public class Q2 {
-    private int numsOfUsers;
-    private int numsOfDays ;
+    private int userCount;
 
-    public Q2(int numsOfUsers, int numsOfDays) {
-        this.numsOfDays = numsOfDays;
-        this.numsOfUsers = numsOfUsers;
+    public Q2(int userCount) {
+        this.userCount = userCount;
     }
 
-    public int getNumsOfUsers() {
-        return this.numsOfUsers;
+    public int getUserCount() {
+        return userCount;
     }
 
-    public void setNumsofUsers(int numsOfUsers) {
-        this.numsOfUsers = numsOfUsers;
+    public void setUserCount(int userCount) {
+        this.userCount = userCount;
     }
 
-    public int getNumsOfDays() {
-        return this.numsOfDays;
-    }
-
-    public void setNumsofDays(int numsOfDays) {
-        this.numsOfDays = numsOfDays;
-    }
-
+    
 }

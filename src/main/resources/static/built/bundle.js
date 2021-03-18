@@ -29131,7 +29131,7 @@ var AllUsers = /*#__PURE__*/function (_React$Component) {
       }) : /*#__PURE__*/React.createElement(React.Fragment, null), /*#__PURE__*/React.createElement("button", {
         type: "button",
         onClick: this.handleUpdateUser
-      }, "Update"))) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Users"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+      }, "Update"))) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Users"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
         type: "button",
         onClick: this.handleCreateClicked
       }, "Create")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Username"), /*#__PURE__*/React.createElement("th", null, "First Name"), /*#__PURE__*/React.createElement("th", null, "Last Name"), /*#__PURE__*/React.createElement("th", null, "Gender"), /*#__PURE__*/React.createElement("th", null, "Date of Birth"), /*#__PURE__*/React.createElement("th", null, "Action"))), /*#__PURE__*/React.createElement("tbody", null, users ? users.map(function (row) {
@@ -29190,23 +29190,29 @@ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
-var _require = __webpack_require__(/*! ./q10 */ "./src/main/js/q10.js"),
-    Q10 = _require["default"];
+var _require = __webpack_require__(/*! ./allUsers */ "./src/main/js/allUsers.js"),
+    AllUsers = _require["default"];
 
-var _require2 = __webpack_require__(/*! ./q7 */ "./src/main/js/q7.js"),
-    Q7 = _require2["default"];
+var _require2 = __webpack_require__(/*! ./q1 */ "./src/main/js/q1.js"),
+    Q1 = _require2["default"];
 
-var _require3 = __webpack_require__(/*! ./q9 */ "./src/main/js/q9.js"),
-    Q9 = _require3["default"];
+var _require3 = __webpack_require__(/*! ./q2 */ "./src/main/js/q2.js"),
+    Q2 = _require3["default"];
 
-var _require4 = __webpack_require__(/*! ./allUsers */ "./src/main/js/allUsers.js"),
-    AllUsers = _require4["default"];
+var _require4 = __webpack_require__(/*! ./q5 */ "./src/main/js/q5.js"),
+    Q5 = _require4["default"];
 
-var _require5 = __webpack_require__(/*! ./q1 */ "./src/main/js/q1.js"),
-    Q1 = _require5["default"];
+var _require5 = __webpack_require__(/*! ./q7 */ "./src/main/js/q7.js"),
+    Q7 = _require5["default"];
 
-var _require6 = __webpack_require__(/*! ./q5 */ "./src/main/js/q5.js"),
-    Q5 = _require6["default"];
+var _require6 = __webpack_require__(/*! ./q8 */ "./src/main/js/q8.js"),
+    Q8 = _require6["default"];
+
+var _require7 = __webpack_require__(/*! ./q9 */ "./src/main/js/q9.js"),
+    Q9 = _require7["default"];
+
+var _require8 = __webpack_require__(/*! ./q10 */ "./src/main/js/q10.js"),
+    Q10 = _require8["default"];
 
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
@@ -29243,7 +29249,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       var page = this.state.page;
 
       if (!page) {
-        return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, " Food Clever Home "), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, " Eat Clever Home "), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "users")
         }, "Users")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
@@ -29251,11 +29257,17 @@ var App = /*#__PURE__*/function (_React$Component) {
           onClick: this.handlePageClicked.bind(this, "q1")
         }, "Q1. how many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
+          onClick: this.handlePageClicked.bind(this, "q2")
+        }, "Q2. How many users use our app the past 10 days?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+          href: "#",
           onClick: this.handlePageClicked.bind(this, "q5")
         }, "Q5. What are the food rating for male gender?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q7")
         }, "Q7. What is the differences of the range / average of different nutrition in the recipes of different genders?  ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+          href: "#",
+          onClick: this.handlePageClicked.bind(this, "q8")
+        }, "Q8. Given a particular word, e.g. egg, find the food with the word in description with maximum calorie, or maximum potassium or iodine or minimum vitamin C. (users to find a food suitable for them)  ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q9")
         }, "Q9. ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
@@ -29267,7 +29279,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("a", {
         href: "#",
         onClick: this.handlePageClicked.bind(this, null)
-      }, "Home"), page === "users" ? /*#__PURE__*/React.createElement(AllUsers, null) : null, page === "q7" ? /*#__PURE__*/React.createElement(Q7, null) : null, page === "q9" ? /*#__PURE__*/React.createElement(Q9, null) : null, page === "q10" ? /*#__PURE__*/React.createElement(Q10, null) : null, page === "q1" ? /*#__PURE__*/React.createElement(Q1, null) : null, page === "q5" ? /*#__PURE__*/React.createElement(Q5, null) : null);
+      }, "Home"), page === "users" ? /*#__PURE__*/React.createElement(AllUsers, null) : null, page === "q1" ? /*#__PURE__*/React.createElement(Q1, null) : null, page === "q2" ? /*#__PURE__*/React.createElement(Q2, null) : null, page === "q5" ? /*#__PURE__*/React.createElement(Q5, null) : null, page === "q7" ? /*#__PURE__*/React.createElement(Q7, null) : null, page === "q8" ? /*#__PURE__*/React.createElement(Q8, null) : null, page === "q9" ? /*#__PURE__*/React.createElement(Q9, null) : null, page === "q10" ? /*#__PURE__*/React.createElement(Q10, null) : null);
     }
   }]);
 
@@ -29348,7 +29360,7 @@ var Q1 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q1"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q1"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
     }
   }]);
 
@@ -29428,7 +29440,7 @@ var Q10 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q10"), /*#__PURE__*/React.createElement("div", null, "As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 (60 out of 100) and having most number of comments."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Average Rating"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q10"), /*#__PURE__*/React.createElement("div", null, "As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 (60 out of 100) and having most number of comments."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Average Rating"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.description), /*#__PURE__*/React.createElement("td", null, row.averageRating), /*#__PURE__*/React.createElement("td", null, row.name), /*#__PURE__*/React.createElement("td", null, row.averageAmount), /*#__PURE__*/React.createElement("td", null, row.unitName));
       })))));
     }
@@ -29438,6 +29450,88 @@ var Q10 = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Q10);
+
+/***/ }),
+
+/***/ "./src/main/js/q2.js":
+/*!***************************!*\
+  !*** ./src/main/js/q2.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var Q2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(Q2, _React$Component);
+
+  var _super = _createSuper(Q2);
+
+  function Q2(props) {
+    var _this;
+
+    _classCallCheck(this, Q2);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      result: []
+    };
+    return _this;
+  }
+
+  _createClass(Q2, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/q2').then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        console.log(result);
+
+        _this2.setState({
+          result: result
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      console.log(this.state.result);
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q2"), /*#__PURE__*/React.createElement("div", null, "How many users use our app the past 10 days?  "), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "User Count"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+        return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.userCount));
+      })))));
+    }
+  }]);
+
+  return Q2;
+}(React.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Q2);
 
 /***/ }),
 
@@ -29510,7 +29604,7 @@ var Q5 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q5"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q5"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
     }
   }]);
 
@@ -29590,7 +29684,7 @@ var Q7 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q7"), /*#__PURE__*/React.createElement("div", null, "What is the differences of the range / average of different nutrition (e.g. energy in calories, vitamin C, potassium, etc) in the recipes of different genders?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Gender"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Minimum Amount"), /*#__PURE__*/React.createElement("th", null, "Maximum Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q7"), /*#__PURE__*/React.createElement("div", null, "What is the differences of the range / average of different nutrition (e.g. energy in calories, vitamin C, potassium, etc) in the recipes of different genders?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Gender"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Minimum Amount"), /*#__PURE__*/React.createElement("th", null, "Maximum Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.gender), /*#__PURE__*/React.createElement("td", null, row.name), /*#__PURE__*/React.createElement("td", null, row.averageAmount), /*#__PURE__*/React.createElement("td", null, row.minimumAmount), /*#__PURE__*/React.createElement("td", null, row.maximumAmount), /*#__PURE__*/React.createElement("td", null, row.unitName));
       })))));
     }
@@ -29600,6 +29694,92 @@ var Q7 = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Q7);
+
+/***/ }),
+
+/***/ "./src/main/js/q8.js":
+/*!***************************!*\
+  !*** ./src/main/js/q8.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var Q8 = /*#__PURE__*/function (_React$Component) {
+  _inherits(Q8, _React$Component);
+
+  var _super = _createSuper(Q8);
+
+  function Q8(props) {
+    var _this;
+
+    _classCallCheck(this, Q8);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      result: [{
+        description: 'loading...'
+      }]
+    };
+    return _this;
+  }
+
+  _createClass(Q8, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/q8').then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        console.log(result);
+
+        _this2.setState({
+          result: result
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      console.log(this.state.result);
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q8"), /*#__PURE__*/React.createElement("div", null, "Given a particular word, e.g. egg, find the food with the word in description with maximum calorie, or maximum potassium or iodine or minimum vitamin C. (users to find a food suitable for them)"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "As an example, below is the result with the word 'apple' and showing the vitamin C."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row, i) {
+        return /*#__PURE__*/React.createElement("tr", {
+          key: i
+        }, /*#__PURE__*/React.createElement("td", null, row.description));
+      })))));
+    }
+  }]);
+
+  return Q8;
+}(React.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Q8);
 
 /***/ }),
 
@@ -29672,7 +29852,7 @@ var Q9 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q9"), /*#__PURE__*/React.createElement("div", null, "TODO"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Eat Clever Q9"), /*#__PURE__*/React.createElement("div", null, "TODO"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
     }
   }]);
 
