@@ -29202,20 +29202,26 @@ var _require3 = __webpack_require__(/*! ./q2 */ "./src/main/js/q2.js"),
 var _require4 = __webpack_require__(/*! ./q3 */ "./src/main/js/q3.js"),
     Q3 = _require4["default"];
 
-var _require5 = __webpack_require__(/*! ./q5 */ "./src/main/js/q5.js"),
-    Q5 = _require5["default"];
+var _require5 = __webpack_require__(/*! ./q4 */ "./src/main/js/q4.js"),
+    Q4 = _require5["default"];
 
-var _require6 = __webpack_require__(/*! ./q7 */ "./src/main/js/q7.js"),
-    Q7 = _require6["default"];
+var _require6 = __webpack_require__(/*! ./q5 */ "./src/main/js/q5.js"),
+    Q5 = _require6["default"];
 
-var _require7 = __webpack_require__(/*! ./q8 */ "./src/main/js/q8.js"),
-    Q8 = _require7["default"];
+var _require7 = __webpack_require__(/*! ./q6 */ "./src/main/js/q6.js"),
+    Q6 = _require7["default"];
 
-var _require8 = __webpack_require__(/*! ./q9 */ "./src/main/js/q9.js"),
-    Q9 = _require8["default"];
+var _require8 = __webpack_require__(/*! ./q7 */ "./src/main/js/q7.js"),
+    Q7 = _require8["default"];
 
-var _require9 = __webpack_require__(/*! ./q10 */ "./src/main/js/q10.js"),
-    Q10 = _require9["default"];
+var _require9 = __webpack_require__(/*! ./q8 */ "./src/main/js/q8.js"),
+    Q8 = _require9["default"];
+
+var _require10 = __webpack_require__(/*! ./q9 */ "./src/main/js/q9.js"),
+    Q9 = _require10["default"];
+
+var _require11 = __webpack_require__(/*! ./q10 */ "./src/main/js/q10.js"),
+    Q10 = _require11["default"];
 
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
@@ -29258,7 +29264,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         }, "Users")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q1")
-        }, "Q1. how many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q1. How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q2")
         }, "Q2. How many users use our app the past 10 days?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
@@ -29266,8 +29272,14 @@ var App = /*#__PURE__*/function (_React$Component) {
           onClick: this.handlePageClicked.bind(this, "q3")
         }, "Q3. top 10 users who use our app the most from their login records. ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
+          onClick: this.handlePageClicked.bind(this, "q4")
+        }, "Q4. Which user has the most comments. ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+          href: "#",
           onClick: this.handlePageClicked.bind(this, "q5")
         }, "Q5. What are the food rating for male gender?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+          href: "#",
+          onClick: this.handlePageClicked.bind(this, "q6")
+        }, "Q6.  Find the foods by ratings in descending order for a given criteria (e.g. calories > 300). ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q7")
         }, "Q7. What is the differences of the range / average of different nutrition in the recipes of different genders?  ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
@@ -29285,7 +29297,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("a", {
         href: "#",
         onClick: this.handlePageClicked.bind(this, null)
-      }, "Home"), page === "users" ? /*#__PURE__*/React.createElement(AllUsers, null) : null, page === "q1" ? /*#__PURE__*/React.createElement(Q1, null) : null, page === "q2" ? /*#__PURE__*/React.createElement(Q2, null) : null, page === "q3" ? /*#__PURE__*/React.createElement(Q3, null) : null, page === "q5" ? /*#__PURE__*/React.createElement(Q5, null) : null, page === "q7" ? /*#__PURE__*/React.createElement(Q7, null) : null, page === "q8" ? /*#__PURE__*/React.createElement(Q8, null) : null, page === "q9" ? /*#__PURE__*/React.createElement(Q9, null) : null, page === "q10" ? /*#__PURE__*/React.createElement(Q10, null) : null);
+      }, "Home"), page === "users" ? /*#__PURE__*/React.createElement(AllUsers, null) : null, page === "q1" ? /*#__PURE__*/React.createElement(Q1, null) : null, page === "q2" ? /*#__PURE__*/React.createElement(Q2, null) : null, page === "q3" ? /*#__PURE__*/React.createElement(Q3, null) : null, page === "q4" ? /*#__PURE__*/React.createElement(Q4, null) : null, page === "q5" ? /*#__PURE__*/React.createElement(Q5, null) : null, page === "q6" ? /*#__PURE__*/React.createElement(Q6, null) : null, page === "q7" ? /*#__PURE__*/React.createElement(Q7, null) : null, page === "q8" ? /*#__PURE__*/React.createElement(Q8, null) : null, page === "q9" ? /*#__PURE__*/React.createElement(Q9, null) : null, page === "q10" ? /*#__PURE__*/React.createElement(Q10, null) : null);
     }
   }]);
 
@@ -29366,7 +29378,9 @@ var Q1 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q1"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q1"), /*#__PURE__*/React.createElement("div", null, "How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "Below is the result for category Soup."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Number of foods"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+        return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.count));
+      })))));
     }
   }]);
 
@@ -29623,6 +29637,88 @@ var Q3 = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
+/***/ "./src/main/js/q4.js":
+/*!***************************!*\
+  !*** ./src/main/js/q4.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var Q4 = /*#__PURE__*/function (_React$Component) {
+  _inherits(Q4, _React$Component);
+
+  var _super = _createSuper(Q4);
+
+  function Q4(props) {
+    var _this;
+
+    _classCallCheck(this, Q4);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      result: []
+    };
+    return _this;
+  }
+
+  _createClass(Q4, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/q4').then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        console.log(result);
+
+        _this2.setState({
+          result: result
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      console.log(this.state.result);
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q4"), /*#__PURE__*/React.createElement("div", null, "Which user has the most comments."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "User Name"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+        return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.userName));
+      })))));
+    }
+  }]);
+
+  return Q4;
+}(React.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Q4);
+
+/***/ }),
+
 /***/ "./src/main/js/q5.js":
 /*!***************************!*\
   !*** ./src/main/js/q5.js ***!
@@ -29692,7 +29788,9 @@ var Q5 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q5"), /*#__PURE__*/React.createElement("div", null, JSON.stringify(this.state.result)));
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q5"), /*#__PURE__*/React.createElement("div", null, "What are the food rating for male gender?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Username"), /*#__PURE__*/React.createElement("th", null, "Rating"), /*#__PURE__*/React.createElement("th", null, "Food"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+        return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.username), /*#__PURE__*/React.createElement("td", null, row.rate), /*#__PURE__*/React.createElement("td", null, row.foodDescription));
+      })))));
     }
   }]);
 
@@ -29700,6 +29798,90 @@ var Q5 = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Q5);
+
+/***/ }),
+
+/***/ "./src/main/js/q6.js":
+/*!***************************!*\
+  !*** ./src/main/js/q6.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var q6 = /*#__PURE__*/function (_React$Component) {
+  _inherits(q6, _React$Component);
+
+  var _super = _createSuper(q6);
+
+  function q6(props) {
+    var _this;
+
+    _classCallCheck(this, q6);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      result: []
+    };
+    return _this;
+  }
+
+  _createClass(q6, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/q6').then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        console.log(result);
+
+        _this2.setState({
+          result: result
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      console.log(this.state.result);
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q6"), /*#__PURE__*/React.createElement("div", null, "Find the foods by ratings in descending order for a given criteria (e.g. calories > 300)."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Food Name"), /*#__PURE__*/React.createElement("th", null, "Average Rating"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row, i) {
+        return /*#__PURE__*/React.createElement("tr", {
+          key: i
+        }, /*#__PURE__*/React.createElement("td", null, row.foodDescription), /*#__PURE__*/React.createElement("td", null, row.averageRating));
+      })))));
+    }
+  }]);
+
+  return q6;
+}(React.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (q6);
 
 /***/ }),
 

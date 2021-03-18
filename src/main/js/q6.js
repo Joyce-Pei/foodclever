@@ -1,13 +1,13 @@
 const React = require('react');
 
-class Q5 extends React.Component {
+class q6 extends React.Component {
     constructor(props) {
         super(props);
         this.state = { result: [] }
     }
 
     componentDidMount() {
-        fetch('/api/q5')
+        fetch('/api/q6')
             .then(response => response.json())
             .then(result => {
                 console.log(result);
@@ -19,25 +19,23 @@ class Q5 extends React.Component {
     render() {
         console.log(this.state.result);
         return (<>
-            <h4>EatClever Q5</h4>
-            <div>What are the food rating for male gender?</div>
-            
+            <h4>Food Clever Q6</h4>
+            <div>Find the foods by ratings in descending order 
+                for a given criteria (e.g. calories &gt; 300).</div>
             <div>
                 <table>
                     <thead>
                         <tr>
-                            <th>Username</th>
-                            <th>Rating</th>
-                            <th>Food</th>
+                            <th>Food Name</th>
+                            <th>Average Rating</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            this.state.result.map(row =>
-                                <tr>
-                                    <td>{row.username}</td>
-                                    <td>{row.rate}</td>
+                            this.state.result.map((row,i) =>
+                                <tr key={i}>
                                     <td>{row.foodDescription}</td>
+                                    <td>{row.averageRating}</td>
                                 </tr>
                             )
                         }
@@ -47,4 +45,4 @@ class Q5 extends React.Component {
         </>)
     }
 }
-export default Q5;
+export default q6;

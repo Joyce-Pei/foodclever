@@ -20,7 +20,28 @@ class Q1 extends React.Component {
         console.log(this.state.result);
         return(<>
             <h4>EatClever Q1</h4>
-            <div>{JSON.stringify(this.state.result)}</div>
+            <div>How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)</div>
+            <br/>
+            <div>Below is the result for category Soup.</div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number of foods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.state.result.map(row =>
+                                <tr>
+                                    <td>{row.count}</td>
+                                </tr>
+                            )
+                        }
+                    </tbody>
+                </table>
+            </div>
+            
         </>)
     }
 }

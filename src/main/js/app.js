@@ -4,7 +4,9 @@ const { default: AllUsers } = require('./allUsers');
 const { default: Q1 } = require('./q1');
 const { default: Q2 } = require('./q2');
 const { default: Q3 } = require('./q3');
+const { default: Q4 } = require('./q4');
 const { default: Q5 } = require('./q5');
+const { default: Q6 } = require('./q6');
 const { default: Q7 } = require('./q7');
 const { default: Q8 } = require('./q8');
 const { default: Q9 } = require('./q9');
@@ -32,7 +34,7 @@ class App extends React.Component {
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q1")}>
-                            Q1. how many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?
+                            Q1. How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?
                          </a>
                     </p>
                     <p>
@@ -45,9 +47,17 @@ class App extends React.Component {
                             Q3. top 10 users who use our app the most from their login records. </a>
                     </p>
                     <p>
+                        <a href='#' onClick={this.handlePageClicked.bind(this, "q4")}>
+                            Q4. Which user has the most comments. </a>
+                    </p>
+                    <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q5")}>
                             Q5. What are the food rating for male gender?
                          </a>
+                    </p>
+                    <p>
+                        <a href='#' onClick={this.handlePageClicked.bind(this, "q6")}>
+                            Q6.  Find the foods by ratings in descending order for a given criteria (e.g. calories &gt; 300). </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q7")}>
@@ -78,6 +88,7 @@ class App extends React.Component {
 
 
 
+
                 </>
             )
         }
@@ -95,9 +106,14 @@ class App extends React.Component {
             {
                 page === "q3" ? <Q3 /> : null
             }
-
+            {
+                page === "q4" ? <Q4 /> : null
+            }
             {
                 page === "q5" ? <Q5 /> : null
+            }
+            {
+                page === "q6" ? <Q6 /> : null
             }
             {
                 page === "q7" ? <Q7 /> : null
@@ -111,9 +127,6 @@ class App extends React.Component {
             {
                 page === "q10" ? <Q10 /> : null
             }
-
-
-
         </>
         )
 

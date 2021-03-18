@@ -1,4 +1,5 @@
-package neu.db.project.foodclever.q5;
+package neu.db.project.foodclever.q6;
+
 import java.util.List;
 
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,25 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 import neu.db.project.foodclever.ResourceReader;
 
 @RestController
-
-public class Q5Controller {
+public class Q6Controller {
     private final JdbcTemplate jdbcTemplate;
     private final String sql;
 
-    public Q5Controller(JdbcTemplate jdbcTemplate) {
+    public Q6Controller(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
-        this.sql = ResourceReader.readFileToString("classpath:q5.sql");
+        this.sql = ResourceReader.readFileToString("classpath:q6.sql");
     }
 
-    @GetMapping("/api/q5")
-    public List<Q5> get(){
+    @GetMapping("/api/q6")
+    public List<Q6> get(){
         return jdbcTemplate.query(sql, 
-        (rs, row)->new Q5(
-            rs.getString("username"), 
-            rs.getInt("rate"),
-            rs.getString("description")));
+        (rs, row)->new Q6(
+            rs.getString("description"),
+            rs.getDouble("averageRating")));
     }
 
 
 }
-

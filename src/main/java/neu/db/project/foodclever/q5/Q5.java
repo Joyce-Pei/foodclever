@@ -3,10 +3,12 @@ package neu.db.project.foodclever.q5;
 public class Q5 {
     String username;
     int rate;
+    String foodDescription;
 
-    public Q5(String username, int rate) {
+    public Q5(String username, int rate, String foodDescription) {
         this.username = username;
         this.rate = rate;
+        this.foodDescription = foodDescription;
     }
 
 
@@ -24,6 +26,16 @@ public class Q5 {
 
     public void setRate(int rate) {
         this.rate = rate;
+    }
+
+
+    public String getFoodDescription() {
+        return foodDescription;
+    }
+
+
+    public void setFoodDescription(String foodDescription) {
+        this.foodDescription = foodDescription;
     }
 
 }
