@@ -19,7 +19,7 @@ class Q10 extends React.Component {
     render() {
         console.log(this.state.result);
         return (<>
-            <h4>Eat Clever Q10</h4>
+            <h4>EatClever Q10</h4>
             <div>As a user to study about the habit of users, I want to know
             the average rating and the nutrition facts of a certain category of food
             that is at least 3 stars out of 5 (60 out of 100)

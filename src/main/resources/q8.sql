@@ -1,6 +1,6 @@
-select FNF.Description
-from (select FN.fdcid, F.Description, FN.NutrientID, FN.amount
-from FoodNutrients FN join Foods F where FN.Fdcid=f.Fdcid) as FNF
-where (Description like "%apple%" and NutrientId =
-(select NutrientId from Nutrients where Name like '%Vitamin C%'))
-order by Amount desc limit 1 
+select  f.fdcid, f.description, fn.amount, fn.amount, n.unitname 
+from foods f
+join FoodNutrients fn on f.fdcid = fn.fdcid
+join Nutrients n on n.nutrientid = fn.nutrientid
+where Description like "%egg%" and n.Name like "%protein%"
+order by fn.amount desc limit 1

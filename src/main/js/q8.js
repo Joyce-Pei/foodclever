@@ -19,13 +19,13 @@ class Q8 extends React.Component {
     render() {
         console.log(this.state.result);
         return (<>
-            <h4>Eat Clever Q8</h4>
+            <h4>EatClever Q8</h4>
             <div>Given a particular word, e.g. egg, find the food with the word in description 
-                with maximum calorie, or maximum potassium or iodine or minimum vitamin C. 
+                with maximum protein (or other nutrients, e.g. potassium). 
                 (users to find a food suitable for them)  
             </div>
             <br/>
-            <div>As an example, below is the result with the word 'apple' and showing the vitamin C.</div>
+            <div>As an example, below is the result with the word 'egg' and showing the protein.</div>
             <div>
                 <table>
                     <thead>

@@ -93,7 +93,7 @@ class AllUsers extends React.Component {
                     </form>
                 </>
                 : <>
-                    <h4>Eat Clever Users</h4>
+                    <h4>EatClever Users</h4>
                     <div><button type='button' onClick={this.handleCreateClicked}>Create</button></div>
                     <div>
                         <table>

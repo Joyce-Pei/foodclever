@@ -1,13 +1,13 @@
 const React = require('react');
 
-class Q2 extends React.Component {
+class Q3 extends React.Component {
     constructor(props) {
         super(props);
         this.state = { result: [] }
     }
 
     componentDidMount() {
-        fetch('/api/q2')
+        fetch('/api/q3')
             .then(response => response.json())
             .then(result => {
                 console.log(result);
@@ -19,22 +19,22 @@ class Q2 extends React.Component {
     render() {
         console.log(this.state.result);
         return (<>
-            <h4>EatClever Q2</h4>
-            <div>How many users use our app the past 10 days?  </div>
+            <h4>EatClever Q3</h4>
+            <div>Top 10 users who use our app the most from their login records.</div>
             <div>
                 <table>
                     <thead>
                         <tr>
-                            <th>User Count</th>
-                           
-                        </tr>
+                            <th>UserName</th>
+                            <th>LoginCount</th>
+                            </tr>
                     </thead>
                     <tbody>
                         {
                             this.state.result.map(row =>
                                 <tr>
-                                    <td>{row.userCount}</td>
-                                    
+                                    <td>{row.userName}</td>
+                                    <td>{row.loginCount}</td>
                                 </tr>
                             )
                         }
@@ -44,4 +44,4 @@ class Q2 extends React.Component {
         </>)
     }
 }
-export default Q2;
+export default Q3;

@@ -3,6 +3,7 @@ const ReactDOM = require('react-dom');
 const { default: AllUsers } = require('./allUsers');
 const { default: Q1 } = require('./q1');
 const { default: Q2 } = require('./q2');
+const { default: Q3 } = require('./q3');
 const { default: Q5 } = require('./q5');
 const { default: Q7 } = require('./q7');
 const { default: Q8 } = require('./q8');
@@ -25,7 +26,7 @@ class App extends React.Component {
         if (!page) {
             return (
                 <>
-                    <h1> Eat Clever Home </h1>
+                    <h1> EatClever Home </h1>
                     <p>
                         <a href="#" onClick={this.handlePageClicked.bind(this, "users")}>Users</a>
                     </p>
@@ -39,7 +40,10 @@ class App extends React.Component {
                             Q2. How many users use our app the past 10 days?
                          </a>
                     </p>
-
+                    <p>
+                        <a href='#' onClick={this.handlePageClicked.bind(this, "q3")}>
+                            Q3. top 10 users who use our app the most from their login records. </a>
+                    </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q5")}>
                             Q5. What are the food rating for male gender?
@@ -50,17 +54,20 @@ class App extends React.Component {
                             Q7. What is the differences of the range / average of different nutrition
                             in the recipes of different genders?  </a>
                     </p>
+
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q8")}>
                             Q8. Given a particular word, e.g. egg, find the food with the word in description
-                            with maximum calorie, or maximum potassium or iodine or minimum vitamin C.
+                            with maximum protein.
                             (users to find a food suitable for them)  </a>
                     </p>
-
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q9")}>
-                            Q9. </a>
+                            Q9. What are the top 10 foods ( either by food ratings, or usage frequency in recipe,
+                            or by number of user comments) by different ages, and their corresponding Energy
+                                based on KCAL? (restaurants may wantto know which category of food is most welcome).</a>
                     </p>
+
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q10")}>
                             Q10. As a user to study about the habit of users, I want to know
@@ -85,6 +92,10 @@ class App extends React.Component {
             {
                 page === "q2" ? <Q2 /> : null
             }
+            {
+                page === "q3" ? <Q3 /> : null
+            }
+
             {
                 page === "q5" ? <Q5 /> : null
             }
