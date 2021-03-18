@@ -20,9 +20,9 @@ class Q9 extends React.Component {
         console.log(this.state.result);
         return (<>
             <h4>EatClever Q9</h4>
-            <div>What are the top 10 foods ( either by food ratings, or usage frequency in recipe, or by number of user
-            comments) by different ages, and their corresponding Energy based on KCAL? (restaurants may want
-            to know which category of food is most welcome).</div>
+            <div>What are the top 10 food ( either by food ratings, or usage frequency in recipe, or by number of user comments) by different ages,  and their corresponding nutrition facts? (restaurants may want to know which category of food is most welcome) </div>
+            <br/>
+            <div>Example: Below is the output of top 10 food of each age category, order by age category, then by number of comments in descending order, then by calories in assending order</div>
             <div>
                 <table>
                     <thead>

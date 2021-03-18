@@ -32,3 +32,4 @@ from nutrients e1 inner join
 ) e2
 on e1.nutrientid = e2.nutrientid
 where e1.name like '%Energy%' and e1.UnitName like '%KCAL%'
+order by e2.AgeCategory, e2.CommentCount desc, e2.Amount 

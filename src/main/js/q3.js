@@ -20,7 +20,7 @@ class Q3 extends React.Component {
         console.log(this.state.result);
         return (<>
             <h4>EatClever Q3</h4>
-            <div>Top 10 users who use our app the most from their login records.</div>
+            <div>Who are the top ten active users based on their login records?</div>
             <div>
                 <table>
                     <thead>

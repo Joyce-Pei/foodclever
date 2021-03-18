@@ -20,7 +20,7 @@ class Q5 extends React.Component {
         console.log(this.state.result);
         return (<>
             <h4>EatClever Q5</h4>
-            <div>What are the food rating for male gender?</div>
+            <div>What are the food ratings for male users?</div>
             
             <div>
                 <table>

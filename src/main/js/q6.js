@@ -21,12 +21,14 @@ class q6 extends React.Component {
         return (<>
             <h4>Food Clever Q6</h4>
             <div>Find the foods by ratings in descending order 
-                for a given criteria (e.g. calories &gt; 300).</div>
+                for a given criteria (e.g. calories &lt; 300, protein &gt; 50).</div>
+            <br/>
+            <div>Example: below shows foods by ratings in descending order for calories &lt; 300</div>
             <div>
                 <table>
                     <thead>
                         <tr>
-                            <th>Food Name</th>
+                            <th>Food Description</th>
                             <th>Average Rating</th>
                         </tr>
                     </thead>

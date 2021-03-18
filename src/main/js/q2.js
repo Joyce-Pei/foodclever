@@ -20,7 +20,7 @@ class Q2 extends React.Component {
         console.log(this.state.result);
         return (<>
             <h4>EatClever Q2</h4>
-            <div>How many users use our app the past 10 days?  </div>
+            <div>How many users using our app the past 10 days?  </div>
             <div>
                 <table>
                     <thead>

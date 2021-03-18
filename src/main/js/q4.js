@@ -20,7 +20,7 @@ class Q4 extends React.Component {
         console.log(this.state.result);
         return (<>
             <h4>Food Clever Q4</h4>
-            <div>Which user has the most comments.</div>
+            <div>Who generates the most comments?</div>
             <div>
                 <table>
                     <thead>

@@ -20,17 +20,17 @@ class Q8 extends React.Component {
         console.log(this.state.result);
         return (<>
             <h4>EatClever Q8</h4>
-            <div>Given a particular word, e.g. egg, find the food with the word in description 
-                with maximum protein (or other nutrients, e.g. potassium). 
-                (users to find a food suitable for them)  
-            </div>
+            <div>Among one kind of food, show users one specific product with the maximum/minimum nutrients.  Like the egg with most protein, the beer with least alcohol.  </div>
             <br/>
-            <div>As an example, below is the result with the word 'egg' and showing the protein.</div>
+            <div>Example: Below is the result of food with ‘egg’ with maximum protein. </div>
             <div>
                 <table>
                     <thead>
                         <tr>
                             <th>Description</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Unitname</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -38,8 +38,10 @@ class Q8 extends React.Component {
                             this.state.result.map((row,i) =>
                                 <tr key={i}>
                                     <td>{row.description}</td>
-                                   
-                                </tr>
+				                    <td>{row.name}</td>
+                                    <td>{row.amount}</td>
+                                    <td>{row.unitname}</td>
+                               </tr>
                             )
                         }
                     </tbody>

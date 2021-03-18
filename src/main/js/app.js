@@ -34,30 +34,30 @@ class App extends React.Component {
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q1")}>
-                            Q1. How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?
+                            Q1. How many foods do we have in a specific food category (e.g., Beef Products, beverages, etc..)?
                          </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q2")}>
-                            Q2. How many users use our app the past 10 days?
+                            Q2. How many users using our app the past 10 days?
                          </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q3")}>
-                            Q3. top 10 users who use our app the most from their login records. </a>
+                            Q3. Who are the top ten active users based on their login records? </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q4")}>
-                            Q4. Which user has the most comments. </a>
+                            Q4. Who generates the most comments? </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q5")}>
-                            Q5. What are the food rating for male gender?
+                            Q5. What are the food ratings for male users?
                          </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q6")}>
-                            Q6.  Find the foods by ratings in descending order for a given criteria (e.g. calories &gt; 300). </a>
+                            Q6. Find the foods by ratings in descending order for a given criteria (e.g. calories &lt; 300, protein &gt; 50). </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q7")}>
@@ -67,23 +67,17 @@ class App extends React.Component {
 
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q8")}>
-                            Q8. Given a particular word, e.g. egg, find the food with the word in description
-                            with maximum protein.
-                            (users to find a food suitable for them)  </a>
+                            Q8. Among one kind of food, show users one specific product with the maximum/minimum nutrients.  Like the egg with most protein, the beer with least alcohol. 
+                        </a>
                     </p>
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q9")}>
-                            Q9. What are the top 10 foods ( either by food ratings, or usage frequency in recipe,
-                            or by number of user comments) by different ages, and their corresponding Energy
-                                based on KCAL? (restaurants may wantto know which category of food is most welcome).</a>
+                            Q9. What are the top 10 food ( either by food ratings, or usage frequency in recipe, or by number of user comments) by different ages,  and their corresponding nutrition facts? (restaurants may want to know which category of food is most welcome)</a>
                     </p>
 
                     <p>
                         <a href='#' onClick={this.handlePageClicked.bind(this, "q10")}>
-                            Q10. As a user to study about the habit of users, I want to know
-                            the average rating and the nutrition facts of a certain category of food
-                            that is at least 3 stars out of 5 (60 out of 100)
-                        and having most number of comments. </a>
+                            Q10. As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 and have the most number of comments </a>
                     </p>
 
 

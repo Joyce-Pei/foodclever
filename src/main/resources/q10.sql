@@ -20,4 +20,5 @@ join (
 ) c on r.categoryid = c.categoryid
  )
   c on c.categoryid = f.foodCategoryid
- group by c.description, n.nutrientid, n.name, n.unitname, c.averageRating;
+ group by c.description, n.nutrientid, n.name, n.unitname, c.averageRating
+order by n.name, n.unitname;

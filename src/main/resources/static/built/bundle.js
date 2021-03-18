@@ -29264,34 +29264,34 @@ var App = /*#__PURE__*/function (_React$Component) {
         }, "Users")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q1")
-        }, "Q1. How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q1. How many foods do we have in a specific food category (e.g., Beef Products, beverages, etc..)?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q2")
-        }, "Q2. How many users use our app the past 10 days?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q2. How many users using our app the past 10 days?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q3")
-        }, "Q3. top 10 users who use our app the most from their login records. ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q3. Who are the top ten active users based on their login records? ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q4")
-        }, "Q4. Which user has the most comments. ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q4. Who generates the most comments? ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q5")
-        }, "Q5. What are the food rating for male gender?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q5. What are the food ratings for male users?")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q6")
-        }, "Q6.  Find the foods by ratings in descending order for a given criteria (e.g. calories > 300). ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q6. Find the foods by ratings in descending order for a given criteria (e.g. calories < 300, protein > 50). ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q7")
         }, "Q7. What is the differences of the range / average of different nutrition in the recipes of different genders?  ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q8")
-        }, "Q8. Given a particular word, e.g. egg, find the food with the word in description with maximum protein. (users to find a food suitable for them)  ")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q8. Among one kind of food, show users one specific product with the maximum/minimum nutrients.  Like the egg with most protein, the beer with least alcohol.")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q9")
-        }, "Q9. What are the top 10 foods ( either by food ratings, or usage frequency in recipe, or by number of user comments) by different ages, and their corresponding Energy based on KCAL? (restaurants may wantto know which category of food is most welcome).")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
+        }, "Q9. What are the top 10 food ( either by food ratings, or usage frequency in recipe, or by number of user comments) by different ages,  and their corresponding nutrition facts? (restaurants may want to know which category of food is most welcome)")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
           href: "#",
           onClick: this.handlePageClicked.bind(this, "q10")
-        }, "Q10. As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 (60 out of 100) and having most number of comments. ")));
+        }, "Q10. As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 and have the most number of comments ")));
       }
 
       return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("a", {
@@ -29378,7 +29378,7 @@ var Q1 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q1"), /*#__PURE__*/React.createElement("div", null, "How many foods do we have by specific category (e.g., Beef Products, beverages, etc..)"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "Below is the result for category Soup."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Number of foods"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q1"), /*#__PURE__*/React.createElement("div", null, "How many foods do we have in a specific food category (e.g., Beef Products, beverages, etc..)?"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "Example: Below is the result for category Soup."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Number of foods"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.count));
       })))));
     }
@@ -29460,7 +29460,7 @@ var Q10 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q10"), /*#__PURE__*/React.createElement("div", null, "As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 (60 out of 100) and having most number of comments."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Average Rating"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q10"), /*#__PURE__*/React.createElement("div", null, "As a user to study about the habit of users, I want to know the average rating and the nutrition facts of a certain category of food that is at least 3 stars out of 5 and have the most number of comments"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Average Rating"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.description), /*#__PURE__*/React.createElement("td", null, row.averageRating), /*#__PURE__*/React.createElement("td", null, row.name), /*#__PURE__*/React.createElement("td", null, row.averageAmount), /*#__PURE__*/React.createElement("td", null, row.unitName));
       })))));
     }
@@ -29542,7 +29542,7 @@ var Q2 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q2"), /*#__PURE__*/React.createElement("div", null, "How many users use our app the past 10 days?  "), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "User Count"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q2"), /*#__PURE__*/React.createElement("div", null, "How many users using our app the past 10 days?  "), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "User Count"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.userCount));
       })))));
     }
@@ -29624,7 +29624,7 @@ var Q3 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q3"), /*#__PURE__*/React.createElement("div", null, "Top 10 users who use our app the most from their login records."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "UserName"), /*#__PURE__*/React.createElement("th", null, "LoginCount"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q3"), /*#__PURE__*/React.createElement("div", null, "Who are the top ten active users based on their login records?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "UserName"), /*#__PURE__*/React.createElement("th", null, "LoginCount"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.userName), /*#__PURE__*/React.createElement("td", null, row.loginCount));
       })))));
     }
@@ -29706,7 +29706,7 @@ var Q4 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q4"), /*#__PURE__*/React.createElement("div", null, "Which user has the most comments."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "User Name"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q4"), /*#__PURE__*/React.createElement("div", null, "Who generates the most comments?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "User Name"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.userName));
       })))));
     }
@@ -29788,7 +29788,7 @@ var Q5 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q5"), /*#__PURE__*/React.createElement("div", null, "What are the food rating for male gender?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Username"), /*#__PURE__*/React.createElement("th", null, "Rating"), /*#__PURE__*/React.createElement("th", null, "Food"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q5"), /*#__PURE__*/React.createElement("div", null, "What are the food ratings for male users?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Username"), /*#__PURE__*/React.createElement("th", null, "Rating"), /*#__PURE__*/React.createElement("th", null, "Food"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.username), /*#__PURE__*/React.createElement("td", null, row.rate), /*#__PURE__*/React.createElement("td", null, row.foodDescription));
       })))));
     }
@@ -29870,7 +29870,7 @@ var q6 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q6"), /*#__PURE__*/React.createElement("div", null, "Find the foods by ratings in descending order for a given criteria (e.g. calories > 300)."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Food Name"), /*#__PURE__*/React.createElement("th", null, "Average Rating"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row, i) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "Food Clever Q6"), /*#__PURE__*/React.createElement("div", null, "Find the foods by ratings in descending order for a given criteria (e.g. calories < 300, protein > 50)."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "Example: below shows foods by ratings in descending order for calories < 300"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Food Description"), /*#__PURE__*/React.createElement("th", null, "Average Rating"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row, i) {
         return /*#__PURE__*/React.createElement("tr", {
           key: i
         }, /*#__PURE__*/React.createElement("td", null, row.foodDescription), /*#__PURE__*/React.createElement("td", null, row.averageRating));
@@ -29954,7 +29954,7 @@ var Q7 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q7"), /*#__PURE__*/React.createElement("div", null, "What is the differences of the range / average of different nutrition (e.g. energy in calories, vitamin C, potassium, etc) in the recipes of different genders?"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Gender"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Minimum Amount"), /*#__PURE__*/React.createElement("th", null, "Maximum Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q7"), /*#__PURE__*/React.createElement("div", null, "What are the differences of the range / average of different nutrition (e.g. energy in calories, vitamin C, potassium, etc) in the recipes of different genders?"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Gender"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Average Amount"), /*#__PURE__*/React.createElement("th", null, "Minimum Amount"), /*#__PURE__*/React.createElement("th", null, "Maximum Amount"), /*#__PURE__*/React.createElement("th", null, "Unit"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.gender), /*#__PURE__*/React.createElement("td", null, row.name), /*#__PURE__*/React.createElement("td", null, row.averageAmount), /*#__PURE__*/React.createElement("td", null, row.minimumAmount), /*#__PURE__*/React.createElement("td", null, row.maximumAmount), /*#__PURE__*/React.createElement("td", null, row.unitName));
       })))));
     }
@@ -30038,10 +30038,10 @@ var Q8 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q8"), /*#__PURE__*/React.createElement("div", null, "Given a particular word, e.g. egg, find the food with the word in description with maximum protein (or other nutrients, e.g. potassium). (users to find a food suitable for them)"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "As an example, below is the result with the word 'egg' and showing the protein."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row, i) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q8"), /*#__PURE__*/React.createElement("div", null, "Among one kind of food, show users one specific product with the maximum/minimum nutrients.  Like the egg with most protein, the beer with least alcohol.  "), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "Example: Below is the result of food with \u2018egg\u2019 with maximum protein. "), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Amount"), /*#__PURE__*/React.createElement("th", null, "Unitname"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row, i) {
         return /*#__PURE__*/React.createElement("tr", {
           key: i
-        }, /*#__PURE__*/React.createElement("td", null, row.description));
+        }, /*#__PURE__*/React.createElement("td", null, row.description), /*#__PURE__*/React.createElement("td", null, row.name), /*#__PURE__*/React.createElement("td", null, row.amount), /*#__PURE__*/React.createElement("td", null, row.unitname));
       })))));
     }
   }]);
@@ -30122,7 +30122,7 @@ var Q9 = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       console.log(this.state.result);
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q9"), /*#__PURE__*/React.createElement("div", null, "What are the top 10 foods ( either by food ratings, or usage frequency in recipe, or by number of user comments) by different ages, and their corresponding Energy based on KCAL? (restaurants may want to know which category of food is most welcome)."), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "AgeCategory"), /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "CommentCount"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "UnitName"), /*#__PURE__*/React.createElement("th", null, "Amount"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, "EatClever Q9"), /*#__PURE__*/React.createElement("div", null, "What are the top 10 food ( either by food ratings, or usage frequency in recipe, or by number of user comments) by different ages,  and their corresponding nutrition facts? (restaurants may want to know which category of food is most welcome) "), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("div", null, "Example: Below is the output of top 10 food of each age category, order by age category, then by number of comments in descending order, then by calories in assending order"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "AgeCategory"), /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "CommentCount"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "UnitName"), /*#__PURE__*/React.createElement("th", null, "Amount"))), /*#__PURE__*/React.createElement("tbody", null, this.state.result.map(function (row) {
         return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, row.ageCategory), /*#__PURE__*/React.createElement("td", null, row.description), /*#__PURE__*/React.createElement("td", null, row.commentCount), /*#__PURE__*/React.createElement("td", null, row.name), /*#__PURE__*/React.createElement("td", null, row.unitName), /*#__PURE__*/React.createElement("td", null, row.amount));
       })))));
     }

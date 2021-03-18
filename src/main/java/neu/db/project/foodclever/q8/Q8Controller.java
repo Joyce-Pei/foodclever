@@ -22,7 +22,10 @@ public class Q8Controller {
     public List<Q8> get(){
         return jdbcTemplate.query(sql, 
         (rs, row)->new Q8(
-            rs.getString("Description")));
+            rs.getString("description"),
+	    rs.getString("name"),
+            rs.getDouble("amount"),
+            rs.getString("unitname")));
     }
 
 

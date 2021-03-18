@@ -20,9 +20,10 @@ class Q7 extends React.Component {
         console.log(this.state.result);
         return(<>
             <h4>EatClever Q7</h4>
-            <div>What is the differences of the range / average of different nutrition 
+            <div>What are the differences of the range / average of different nutrition 
             (e.g. energy in calories, vitamin C, potassium, etc) in the recipes of different genders? 
             </div>
+            <br/>
             <div>
                 <table>
                     <thead>

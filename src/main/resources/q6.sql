@@ -14,7 +14,7 @@ from
     where(
         n.name = 'Energy'
         and n.unitname = 'KCAL'
-        and fn.amount > 300
+        and fn.amount < 300
       )
   ) x on uf.fdcid = x.fdcid
 group by
